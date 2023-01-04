@@ -1,0 +1,128 @@
+
+body,html{
+    scroll-behavior: smooth;
+    background: #000;
+}
+
+
+.page-menu .reserve{
+    color: #d2aa67;
+}
+
+.page-menu h1 .black{display: none;}
+.page-menu h1 .gold{display: inline-block;}
+
+.page-menu .menu-btn span{background-color: #d2aa67;}
+.menu{ 
+    width: 100%;
+    height: 100vh;
+}
+
+
+.wrap h1 {
+    width: 70%;
+    color: #fff;
+    font-size: 40px;
+    margin: auto;
+    padding: 150px 0 50px 0;
+}
+
+.img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.img a {
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px / 3);
+}
+.img a:nth-child(3n) {
+    margin-right: 0;
+}
+
+.img a.blur img {
+    filter: blur(4px);
+}
+
+.img a img{
+    width: 100%;
+    display: block;
+    opacity: 0.6;
+    transition: filter 1s;
+    transform: scale(1.02);
+
+}
+
+.img a img:hover{
+    opacity: 1;
+}
+
+.view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    text-align: center;
+    display:none;
+}
+
+.view .close-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.view figure {
+    z-index: 30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 900px;
+}
+
+.view figure img{
+    width: 100%;
+}
+
+.btn-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-close:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+
+.btn-close:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transform:translate(-50%,-50%) rotate(45deg)
+}

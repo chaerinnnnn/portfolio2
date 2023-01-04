@@ -1,0 +1,31 @@
+
+.titset {
+    position: absolute;
+    top: 170px;
+    left: 90px;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: 'TradeGothic20',sans-serif;
+}
+
+.titset span {
+    color: #fff;
+}
+
+.titset p {
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 90px 0 0 0;
+    line-height: 160%;
+}
+
+.wrap {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    min-width: 1600px;
+}
